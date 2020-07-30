@@ -1,0 +1,28 @@
+.buttonBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonBox .dateText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgray;
+    width: 50%;
+}
+
+.buttonBox .varyButton{
+    color: #fff;
+    background-color: cadetblue;
+    width: 50%;
+    font-size: small;
+    /* border: 5rpx solid #f5f5f5; */
+}
+
+.buttonBox .hiddenButton{
+    color: #fff;
+    background-color: crimson;
+    width: 50%;
+    font-size: small;
+    /* border: 5rpx solid #f5f5f5; */
+}

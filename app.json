@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/task/task",
+    "pages/self/self"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TimeManager",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "color": "white",
+    "selectedColor": "green",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/icons/home.png",
+        "selectedIconPath": "/icons/home_active.png"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "添加任务",
+        "iconPath": "/icons/task.png",
+        "selectedIconPath": "/icons/task_active.png"
+
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "我的",
+        "iconPath": "/icons/self.png",
+        "selectedIconPath": "/icons/self_active.png"
+      }
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

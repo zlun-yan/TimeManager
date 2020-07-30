@@ -1,0 +1,12 @@
+<view hidden="{{hideButtonText == '重新选择日期'}}"><Calendar id="Calendar" bind:select="select"/></view>
+<view class='buttonBox'>
+    <button class='varyButton' bindtap='toggleType' hidden="{{hideButtonText == '重新选择日期'}}">{{buttonText}}</button>
+    <view class="dateText">{{selectVal}}</view>
+    <button class='hiddenButton' bindtap='toggleHidden'>{{hideButtonText}}</button>
+</view>
+
+<view style='text-align:center'>
+    <text>{{hideButtonText}}</text>
+    <view>Selected:{{selectVal}}</view>
+</view>
+
