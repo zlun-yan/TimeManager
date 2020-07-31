@@ -1,2 +1,25 @@
-<!--pages/task/task.wxml-->
-<text>pages/task/task.wxml</text>
+<view class="topCalendar" id="topCalendar" hidden="{{hideButtonText != '确定'}}">
+  <view>
+    <Calendar id="Calendar" bind:select="select" />
+  </view>
+  <view class='buttonBox'>
+    <button class='varyButton' bindtap='toggleType'>
+      {{buttonText}}
+    </button>
+    <view class="dateText">{{selectVal}}</view>
+    <button class='hiddenButton' bindtap='toggleHidden'>{{hideButtonText}}</button>
+  </view>
+</view>
+
+<scroll-view style='height:{{scrollViewHeight}}px' scroll-y="{{true}}" scroll-with-animation>
+  <view class="dateSelect">
+    <view class="beginDate" bindtap='selectBeginDate'>
+      开始日期：<text style="color: #a9a9a9">{{beginDate}}</text>
+    </view>
+    <view class="endDate" bindtap='selectEndDate'>
+      结束日期：<text style="color: #a9a9a9">{{endDate}}</text>
+    </view>
+  </view>
+
+  <view>输入：<input confirm-type="send" class="input"/></view>
+</scroll-view>

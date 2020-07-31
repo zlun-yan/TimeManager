@@ -1,1 +1,58 @@
-/* pages/task/task.wxss */
+.topCalendar{
+}
+
+.topCalendar .buttonBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.topCalendar .buttonBox .dateText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkgray;
+  width: 50%;
+}
+
+.topCalendar .buttonBox .varyButton{
+  color: #fff;
+  background-color: cadetblue;
+  width: 50%;
+  font-size: small;
+  /* border: 5rpx solid #f5f5f5; */
+}
+
+.topCalendar .buttonBox .hiddenButton{
+  color: #fff;
+  background-color: crimson;
+  width: 50%;
+  font-size: small;
+  /* border: 5rpx solid #f5f5f5; */
+}
+
+.dateSelect{
+  display: flex;
+  flex-direction: row;
+}
+
+.dateSelect .beginDate{
+  width: 50%;
+  font-size: small;
+  border-bottom-style: solid;
+  border-bottom-color: forestgreen;
+}
+
+.dateSelect .endDate{
+  width: 50%;
+  font-size: small;
+  border-bottom-style: solid;
+  border-bottom-color: lightcoral;
+}
+
+.input{
+  border: 2rpx solid #ccc;
+  padding: 14rpx 0rpx;
+  border-radius: 6rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}

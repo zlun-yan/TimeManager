@@ -1,12 +1,51 @@
-<view hidden="{{hideButtonText == '重新选择日期'}}"><Calendar id="Calendar" bind:select="select"/></view>
-<view class='buttonBox'>
-    <button class='varyButton' bindtap='toggleType' hidden="{{hideButtonText == '重新选择日期'}}">{{buttonText}}</button>
+<view class="topCalendar" id="topCalendar">
+  <view hidden="{{hideButtonText == '重新选择日期'}}">
+    <Calendar id="Calendar" bind:select="select" />
+  </view>
+  <view class='buttonBox'>
+    <button class='varyButton' bindtap='toggleType' hidden="{{hideButtonText == '重新选择日期'}}">
+      {{buttonText}}
+    </button>
     <view class="dateText">{{selectVal}}</view>
     <button class='hiddenButton' bindtap='toggleHidden'>{{hideButtonText}}</button>
+  </view>
 </view>
-
-<view style='text-align:center'>
-    <text>{{hideButtonText}}</text>
-    <view>Selected:{{selectVal}}</view>
-</view>
-
+<scroll-view style='height:{{scrollViewHeight}}px' scroll-y="{{true}}" scroll-with-animation>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+  <view>hello</view>
+</scroll-view>

@@ -59,7 +59,7 @@ Component({
         //滚动模式
         //当年当月当天 滚动到制定日期 否则滚动到当月1日
         scrollCalendar(year, month, date){
-            var that = this, scrollLeft = 0, windowWidth = 750;
+            var that = this, scrollLeft = 0;
             wx.getSystemInfo({
                 success(res) {
                     //切换月份时 date为0

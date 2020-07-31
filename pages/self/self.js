@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  //触发滚动事件
+  onPageScroll: function(){
+    console.log('触发了滚动事件')
   }
 })
