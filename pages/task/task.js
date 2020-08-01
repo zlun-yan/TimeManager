@@ -15,7 +15,21 @@ Page({
     selectVal: '',
     beginDate: '',
     endDate: '',
-    selectDateType: 0
+    selectDateType: 0,
+
+    inputFocus: false
+  },
+
+  focus: function(event) {
+    this.setData({
+      inputFocus: true
+    })
+  },
+
+  blur: function(event) {
+    this.setData({
+      inputFocus: false
+    })
   },
 
   //组件监听事件
