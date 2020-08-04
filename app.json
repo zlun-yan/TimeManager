@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/task/task",
-    "pages/self/self"
+    "pages/folder/folder",
+    "pages/tasksOption/tasksOption"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,17 +24,11 @@
         "selectedIconPath": "/icons/home_active.png"
       },
       {
-        "pagePath": "pages/task/task",
-        "text": "添加任务",
+        "pagePath": "pages/tasksOption/tasksOption",
+        "text": "任务",
         "iconPath": "/icons/task.png",
         "selectedIconPath": "/icons/task_active.png"
 
-      },
-      {
-        "pagePath": "pages/self/self",
-        "text": "我的",
-        "iconPath": "/icons/self.png",
-        "selectedIconPath": "/icons/self_active.png"
       }
     ]
   },

@@ -1,0 +1,12 @@
+/* components/palette/palette.wxss */
+.colorBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorButton{
+  height: 50rpx;
+  width: 50rpx;
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  border-radius: 50%;
+}

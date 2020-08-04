@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "Palette": "../../components/palette/palette"
+  }
+}

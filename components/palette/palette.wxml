@@ -1,0 +1,23 @@
+<!--components/palette/palette.wxml-->
+<view class="colorBox">
+  <view style="background-color: #000000" id="#000000" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #4CA6EF" id="#4CA6EF" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #52B8D2" id="#52B8D2" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #6CBE5E" id="#6CBE5E" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #A0BB31" id="#A0BB31" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #FFD966" id="#FFD966" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #F2B04B" id="#F2B04B" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #F18181" id="#F18181" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #ED70A5" id="#ED70A5" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #CF66F7" id="#CF66F7" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #B79A8F" id="#B79A8F" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #A4AFC7" id="#A4AFC7" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #ABA6B5" id="#ABA6B5" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #ABBDC4" id="#ABBDC4" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #C0B89E" id="#C0B89E" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #DDE358" id="#DDE358" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #9842EB" id="#9842EB" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #6FE9BE" id="#6FE9BE" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #5992F8" id="#5992F8" class="colorButton" bindtap="select"></view>
+  <view style="background-color: #EC6666" id="#EC6666" class="colorButton" bindtap="select"></view>
+</view>

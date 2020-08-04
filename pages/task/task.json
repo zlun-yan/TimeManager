@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "Calendar": "../../components/calendar/calendar"
-  }
+  },
+  "navigationBarTitleText": "添加任务"
 }

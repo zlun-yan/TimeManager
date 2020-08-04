@@ -1,0 +1,51 @@
+<!--pages/tasksOption/tasksOption.wxml-->
+<view class="easyTabBar" id="easyTabBar">
+  <view class="wrap {{ select == '类别' ? 'select' :''}}" id="类别" bindtap='select'>类别</view>
+  <view class="wrap {{ select == '标签' ? 'select' :''}}" id="标签" bindtap='select'>标签</view>
+  <view class="wrap {{ select == '优先级' ? 'select' :''}}" id="优先级" bindtap='select'>优先级</view>
+</view>
+
+<scroll-view style='height:{{scrollViewHeight}}px' scroll-y="{{true}}" scroll-with-animation>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+  <view>{{select}}</view>
+</scroll-view>
+
+<view class="buttonBox" id="buttonBox">
+  <button class="firstButton" bindtap="addFolder">添加{{select}}</button>
+  <button class="secondButton" bindtap="addTask">添加任务</button>
+</view>

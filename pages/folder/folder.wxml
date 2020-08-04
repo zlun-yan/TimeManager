@@ -1,0 +1,15 @@
+<!-- pages/folder/folder.wxml -->
+<view>
+  <input confirm-type="send" class="{{inputFocus ? 'input_active' : 'input'}} " bindfocus="focus" bindblur="blur" placeholder="输入{{title}}的名称吧" />
+</view>
+
+<view class="allColor">
+  <view class="colorSelectButton" bind:tap="displayPalette">
+    选择标识颜色：
+    <view class="color" style="background-color: {{selectColor}}" />
+  </view>
+
+  <view hidden="{{displayPalette}}">
+    <Palette bind:select="selectColor" />
+  </view>
+</view>

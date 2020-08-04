@@ -10,7 +10,7 @@
     <!-- ============滚动展示============  -->
     <view hidden="{{ toggleType == 'large' }}">
         <scroll-view scroll-left="{{scrollLeft}}" scroll-x scroll-with-animation class="calendar-x">
-            <view class='grid' wx:for='{{thisMonthDays}}' wx:key='{{indx}}'>
+            <view class='grid' wx:for='{{thisMonthDays}}'>
                 <view class='self' wx:if="{{ format === year+'-'+item.monthFormat+'-'+item.dateFormat }}"></view>
                 <view class="wrap {{ select === year+'-'+item.monthFormat+'-'+item.dateFormat ? 'select' :''}}" bindtap='select' data-date='{{item.date}}'>
                     <view>{{item.week}}</view>

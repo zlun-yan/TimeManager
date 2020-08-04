@@ -6,11 +6,11 @@ Page({
       lastMonth: 'lastMonth',
       nextMonth: 'nextMonth',
       selectVal: '',
-      buttonText: '最小化日历',
-      hideButtonText: '收起日历',
+      buttonText: '最大化日历',
+      hideButtonText: '选择日期',
   
       windowHeight: 0,
-      scrollViewHeight: 0
+      scrollViewHeight: 0,
     },
   
     //组件监听事件
@@ -31,7 +31,7 @@ Page({
   
     toggleHidden() {
       this.setData({
-        hideButtonText: this.data.hideButtonText == '收起日历' ? '重新选择日期' : '收起日历'
+        hideButtonText: this.data.hideButtonText == '收起日历' ? '选择日期' : '收起日历'
       })
   
       this.changeScrollViewHeight()

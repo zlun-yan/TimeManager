@@ -1,27 +1,32 @@
-<view class="topCalendar" id="topCalendar" hidden="{{hideButtonText != '确定'}}">
-  <view>
-    <Calendar id="Calendar" bind:select="select" />
+<view class="dateSelect">
+  <view class="beginDate" bindtap='toggleDialog' id="0">
+    开始日期：
+    <text style="color: #a9a9a9" id="0">{{beginDate}}</text>
   </view>
-  <view class='buttonBox'>
-    <button class='varyButton' bindtap='toggleType'>
-      {{buttonText}}
-    </button>
-    <view class="dateText">{{selectVal}}</view>
-    <button class='hiddenButton' bindtap='toggleHidden'>{{hideButtonText}}</button>
+  <view class="endDate" bindtap='toggleDialog' id="1">
+    结束日期：
+    <text style="color: #a9a9a9" id="1">{{endDate}}</text>
   </view>
 </view>
 
-<scroll-view style='height:{{scrollViewHeight}}px' scroll-y="{{true}}" scroll-with-animation>
-  <view class="dateSelect">
-    <view class="beginDate" bindtap='selectBeginDate'>
-      开始日期：<text style="color: #a9a9a9">{{beginDate}}</text>
-    </view>
-    <view class="endDate" bindtap='selectEndDate'>
-      结束日期：<text style="color: #a9a9a9">{{endDate}}</text>
-    </view>
-  </view>
+<view>
+  <input confirm-type="send" class="{{inputFocus ? 'input_active' : 'input'}} " bindfocus="focus" bindblur="blur" placeholder="输入你的任务吧" />
+</view>
 
-  <view>
-    <input confirm-type="send" class="{{inputFocus ? 'input_active' : 'input'}} " bindfocus="focus" bindblur="blur" placeholder="输入你的任务吧"/>
+<view class="dialog {{ showDialog ? 'dialog_show' : '' }}">
+  <!-- 如果想点击弹窗外不隐藏，取消bindtap点击事件即可 -->
+  <view class="dialog_mask" bindtap="toggleDialog" />
+  <view class="dialog_container">
+
+    <view class="topCalendar" id="topCalendar">
+      <view>
+        <Calendar id="Calendar" bind:select="select" />
+      </view>
+      <view class='buttonBox'>
+        <view class="dateText">{{selectVal}}</view>
+        <button class='hiddenButton' bindtap='confirmButton'>确定</button>
+      </view>
+    </view>
+
   </view>
-</scroll-view>
+</view>

@@ -1,9 +1,9 @@
 <view class="topCalendar" id="topCalendar">
-  <view hidden="{{hideButtonText == '重新选择日期'}}">
+  <view hidden="{{hideButtonText == '选择日期'}}">
     <Calendar id="Calendar" bind:select="select" />
   </view>
   <view class='buttonBox'>
-    <button class='varyButton' bindtap='toggleType' hidden="{{hideButtonText == '重新选择日期'}}">
+    <button class='varyButton' bindtap='toggleType' hidden="{{hideButtonText == '选择日期'}}">
       {{buttonText}}
     </button>
     <view class="dateText">{{selectVal}}</view>
